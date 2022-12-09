@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./confirmation.html  ">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <form id="form" >
+    <h3>Sign Up</h3>
+    <label >Name / Last Name</label>
+    <input type="text" id="name" onkeyup="validateName()">
+    <span id="output"></span><br>
+
+    <label>Email</label>
+    <input type="text" id="email"onkeyup="validateEmail()">
+    <span id="output2"></span><br>
+
+    <label>Phone Number</label>
+    <input type="text" id="number" onkeyup="validateNumber()">
+    <span id="output3"></span><br>
+
+    <div>
+    <div><label>Gender</label></div><br>
+    <div id="wayeh">
+    <input type="radio" name="gender" value="male" id="mal" onkeyup="return gender()">
+    <label>Male</label>
+    <input type="radio" name="gender" value="female" id="fem" onkeypress="return gender()">
+    <label id="waw">Female</label>
+    </div><br>
+    <span id="output4"></span>
+    </div><br>
+
+   
+    
+    
+    <div><label>Group</label><br>   
+    <div id="column"><br>
+    <div class="raid">
+    <label>DW101</label>
+    <input type="radio" name="opt" onkeyup="return group()">
+    </div>
+
+    <div class="raid">
+    <label>DW102</label>
+    <input type="radio" name="opt" onkeyup="return group()">
+    </div>
+
+    <div class="raid">
+    <label>DW103</label>
+    <input type="radio" name="opt" onkeyup="return group()">
+    </div>
+
+    <div class="raid">
+    <label>DM101</label>
+    <input type="radio" name="opt" onkeyup="return group()">
+    </div>
+
+    <div class="raid">
+    <label>DM102</label>
+    <input type="radio" name="opt" onkeyup="return group()">
+    </div>
+    </div><br>
+    </div><br>
+    <span id="output5"></span><br>
+
+
+
+    <div><label>Clubs</label></div><br>
+    <div id="idk">
+    <label>IT</label>
+    <input type="checkbox" name="check" onclick="return selection()">
+
+    <label>Robotics</label>
+    <input type="checkbox" name="check" onclick="return selection()">
+
+    <label>Chess</label>
+    <input type="checkbox" name="check" onclick="return selection()">
+
+    <label>Music</label> 
+    <input type="checkbox" name="check" onclick="return selection()">
+
+    <label>Football</label> 
+    <input type="checkbox" name="check" onclick="return selection()">
+
+    <label>theatre</label> 
+    <input type="checkbox" name="check" onclick="return selection()"> 
+    </div><br>
+    <span id="output6"></span><br>
+
+    <button id="btn"><label>Done</label></button><br>
+    <span id="recheck"></span>
+    </form>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
